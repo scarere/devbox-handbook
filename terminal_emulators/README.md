@@ -18,4 +18,4 @@ Supposed to be a better version of terminal.app, but seems heavier and I like my
 
 ## Kitty
 *OSX, Linux, GPU-Based*
-Lightweight and configured via a file which means transferring settings between systems easy. Runs on GPU which apparently makes things run real smooth. Supports multiple tabs. Only con I see is that the config file
+Lightweight and configured via a file which means transferring settings between systems easy. Runs on GPU which apparently makes things run real smooth. Supports multiple tabs. Only con I see is that the config file doesn't have a UI, but this is also a pro for transferring settings easily between machines.

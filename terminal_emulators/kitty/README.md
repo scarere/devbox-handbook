@@ -15,6 +15,23 @@ After making edits to `kitty.conf` use `ctrl+shift+f5` to reload the config and 
 
 ## Add syntax highlighting for kitty.conf
 
+I have created a custom `nanorc` file to add syntax highlighting to kitty with `nano`. Copy the nanorc file (I prefer to copy it into the kitty config directory: `~/.config/kitty/kitty.nanorc`). Then add the following to `~/.nanorc`
+
+```bash
+include "~/.config/kitty/kitty.nanorc"
+```
+
+Make sure it is one of the final includes. Any includes that match the `kitty.conf` file will overwrite the settings from `kitt.nanorc` if they are included after. For example the set of `nanorc` files that can be installed through `homebrew` include a simple syntax file for `.conf` files.
+
 ## Add a theme
-A bunch of themes can be found [here](https://github.com/kovidgoyal/kitty-themes)
+The easiest way to change the theme of kitty is to use the `kitten themes` command. Select a theme and the press `M` to have it automatically update `kitty.conf`. The theme can be changed again at any time using this command.
+
+## Shortcuts
+
+- `ctrl+shift+t`: Open new tab
+- `ctrl+shift+,`: Shift tab to the left
+- `ctrl+shift+.`: Shift tab to the right
+- `ctrl+shift+f5`: reload kitty.conf
+- `ctrl+shift+f2`: Open kitty.conf
+
 
