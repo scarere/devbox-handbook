@@ -10,8 +10,8 @@ For now it will be pretty focused on unix based machines.
 
 ## TO-DO:
 
-- Look into oh-my-zsh
-    - Look into zsh-syntax-highlighting plugin
+- Look into [oh-my-zsh](https://ohmyz.sh)
+    - Look into [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/tree/master) plugin
 - Update kitty docs
 - Set up starship prompt repo with custom kitten?
     - Extend custom kitten by figuring out how to make a UI for it.
