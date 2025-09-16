@@ -11,6 +11,7 @@ For now it will be pretty focused on unix based machines.
 ## TO-DO:
 
 - Look into oh-my-zsh
+    - Look into zsh-syntax-highlighting plugin
 - Update kitty docs
 - Set up starship prompt repo with custom kitten?
     - Extend custom kitten by figuring out how to make a UI for it.
