@@ -6,7 +6,9 @@ For now it will be pretty focused on unix based machines.
 ## Start From Scratch:
 
 1. [Pick a Terminal Emulator](terminal_emulators)
-2. [Set up starship prompt](starship)
+2. [Install Homebrew](homebrew)
+3. [Install nano](nano)
+3. [Set up starship prompt](starship)
 
 ## TO-DO:
 

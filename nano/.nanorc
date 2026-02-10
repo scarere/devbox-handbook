@@ -1,0 +1,16 @@
+# nanorc files that come with `brew install nano`
+include "/opt/homebrew/share/nano/*.nanorc"
+
+# Custom nanorc file for kitty cong
+include "~/.config/kitty/kitty.nanorc"
+
+# Nanorc settings
+# https://www.nano-editor.org/dist/latest/nanorc.5.html
+# =====================================================
+
+# Always show current line number at the bottom. Avoid set line number so that we can still use mouse drag to copy text without copying line numbers
+set constantshow
+
+# Configure tab character
+set tabsize 4
+set tabstospaces

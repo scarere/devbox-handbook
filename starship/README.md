@@ -4,7 +4,11 @@ Starship prompt is a tool for having configurable terminal prompts. I consider t
 
 ## Installation Tips
 
-Follow the installation instructions in their [documentation](https://starship.rs/guide/), most likely you'll be using curl to download their install script and run it. By default starship will be installed to /usr/local/bin. If you need to modify parts of the install the script does accept flags. You can either write the install script to disk or use the `-s --` flags to add flags if piping it from the curl command.
+Follow the installation instructions in their [documentation](https://starship.rs/guide/). Preferably install with homebrew.
+
+### Install script
+
+, most likely you'll be using curl to download their install script and run it. By default starship will be installed to /usr/local/bin. If you need to modify parts of the install the script does accept flags. You can either write the install script to disk or use the `-s --` flags to add flags if piping it from the curl command.
 
 ```bash
 # Add flags to piped command
