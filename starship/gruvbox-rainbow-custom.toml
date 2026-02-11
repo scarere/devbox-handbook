@@ -1,5 +1,6 @@
 # Custom version of gruvbox rainbow preset. Changes include
 # - Include python virtual env name in prompt
+# - Change time to 12hr clock
 
 "$schema" = 'https://starship.rs/config-schema.json'
 
@@ -167,7 +168,7 @@ format = '[[ $symbol( $version)( $environment) ](fg:color_fg0 bg:color_bg3)]($st
 
 [time]
 disabled = false
-time_format = "%R"
+time_format = "%-l:%M %p"
 style = "bg:color_bg1"
 format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
 
