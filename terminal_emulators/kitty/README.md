@@ -11,7 +11,7 @@ Currently I'm exploring switching to kitty from the Terminal.app and Gnome Termi
 
 You can either create `~/.config/kitty/kitty.conf` or copy one over. You can edit the file as usual, see the kitty documentation for details. 
 
-After making edits to `kitty.conf` use `ctrl+shift+f5` to reload the config and have those changes reflected. `ctrl+shift+f2` is a shortcut for opening the kitty.conf from anywhere (might want to ensure you have set the `editor` parameter to your preferred editor first though).
+After making edits to `kitty.conf` use `ctrl+shift+f5` (`ctrl+cmd+,` on osx) to reload the config and have those changes reflected. `ctrl+shift+f2` (`ctrl+,` on osx) is a shortcut for opening the kitty.conf from anywhere (might want to ensure you have set the `editor` parameter to your preferred editor first though).
 
 ## Add syntax highlighting for kitty.conf
 
@@ -27,6 +27,8 @@ Make sure it is one of the final includes. Any includes that match the `kitty.co
 The easiest way to change the theme of kitty is to use the `kitten themes` command. Select a theme and the press `M` to have it automatically update `kitty.conf`. The theme can be changed again at any time using this command.
 
 ## Shortcuts
+
+TODO: These are linux specific, create a table with linux/osx shortcuts
 
 - `ctrl+shift+t`: Open new tab
 - `ctrl+shift+,`: Shift tab to the left
