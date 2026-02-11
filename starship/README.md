@@ -2,6 +2,8 @@
 
 Starship prompt is a tool for having configurable terminal prompts. I consider this essential now in order to have information presented to me in a clean way.
 
+This directory contains a couple custom prompts. I will try to keep them updated until I have a set of ultimate prompts that present the info most relevant to me. Most of them are just small edits to the defaults.
+
 ## Installation Tips
 
 Follow the installation instructions in their [documentation](https://starship.rs/guide/). Preferably install with homebrew.
