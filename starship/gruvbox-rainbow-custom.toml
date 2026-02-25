@@ -99,10 +99,27 @@ symbol = ""
 style = "bg:color_aqua"
 format = '[[ $symbol $branch ](fg:color_fg0 bg:color_aqua)]($style)'
 
+#[git_status]
+#style = "bg:color_aqua"
+#format = '[[($all_status$ahead_behind$stashed )](fg:color_fg0 bg:color_aqua)]($style)'
+#stashed = "≡"
+
 [git_status]
 style = "bg:color_aqua"
-format = '[[($all_status$ahead_behind )](fg:color_fg0 bg:color_aqua)]($style)'
-
+format = '[[(󰛄$conflicted$untracked$modified$renamed$deleted)](fg:color_fg0 bg:color_aqua)($ahead_behind$stashed$staged)]($style)'
+ahead = "[⇡](fg:color_fg0 bg:color_aqua)"
+behind = "[⇣](fg:color_fg0 bg:color_aqua)"
+diverged = "[⇕](fg:color_red bg:color_aqua)"
+up_to_date = ""
+stashed = "[≡](fg:color_fg0 bg:color_aqua)"
+conflicted = "\u200B"
+untracked = "\u200B"
+modified = "\u200B"
+staged = "[󱇬](fg:color_fg0 bg:color_aqua)"
+renamed = "\u200B"
+deleted = "\u200B"
+typechanged = ""
+                                                                                                                                                                                                                          
 [nodejs]
 symbol = ""
 style = "bg:color_blue"
