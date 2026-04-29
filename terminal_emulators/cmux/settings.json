@@ -1,0 +1,25 @@
+{
+  // This is the settings.json for cmux. Contains cmux specific settings.
+  // TMK file-managed settings override settings set using the UI
+
+  // This file uses JSON with comments (JSONC).
+  // Uncomment and edit any setting to make it file-managed.
+  // Remove a setting to fall back to the value saved in Settings.
+  // cmux creates this template on launch when both settings file locations are missing.
+  // ~/.config/cmux/settings.json takes precedence over the Application Support fallback.
+  "$schema": "https://raw.githubusercontent.com/manaflow-ai/cmux/main/web/data/cmux-settings.schema.json",
+  "schemaVersion": 1,
+
+  // Custom shortcuts
+  "shortcuts": {
+    // Switch tabs (Surfaces)
+    "nextSurface" : "ctrl+shift+→",
+    "prevSurface" : "ctrl+shift+←",
+    // Close and open tabs (Surfaces)
+    "closeTab": "ctrl+shift+q",
+    "newSurface": "ctrl+shift+t",
+    // Switch workspaces (sidebar)
+    "nextSidebarTab" : "ctrl+shift+↓",
+    "prevSidebarTab" : "ctrl+shift+↑",
+  },
+}

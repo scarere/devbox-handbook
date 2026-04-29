@@ -19,3 +19,9 @@ Supposed to be a better version of terminal.app, but seems heavier and I like my
 ## Kitty
 *OSX, Linux, GPU-Based*
 Lightweight and configured via a file which means transferring settings between systems easy. Runs on GPU which apparently makes things run real smooth. Supports multiple tabs. Only con I see is that the config file doesn't have a UI, but this is also a pro for transferring settings easily between machines.
+
+## Ghostty
+Basically a newer more modern version of kitty. I've never used it directly, but based on my experience with cmux, it sounds like it is way easier to configure. Only con is that it doesn't have fully fledged TUI's like kitty does for selecting themes. But the `ghostty +list-themes` command is similar enough, it previews the themes for you and you just have to type in the one you want manually after rather than hitting enter like with kitty. This is the main TUI I care about anyways and I consider that good enough.
+
+## CMUX
+Built on top of Ghostty (technically on top of `libghostty`). Adds organizational features and integrations that are really useful for agentic development. As of April 29th 2026, it is a bit buggy but defs still usable. Not so buggy that its annoying to use (so far, we'll see as time progresses). You can use the same `config.ghostty` that you would use for Ghostty, so easy to switch between the two.
