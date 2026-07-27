@@ -1,0 +1,3 @@
+# Antidote zsh plugins
+
+# None for now

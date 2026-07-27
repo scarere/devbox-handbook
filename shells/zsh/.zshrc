@@ -16,3 +16,7 @@ export STARSHIP_CONFIG=~/.config/starship/gruvbox-rainbow-custom.toml
 
 # Add starship to path
 eval "$(starship init zsh)"
+
+# Add antidote zsh plugin manager
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+antidote load
