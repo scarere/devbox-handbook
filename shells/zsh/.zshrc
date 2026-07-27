@@ -1,3 +1,6 @@
+# Add local bin to path
+export PATH="$HOME/.local/bin:$PATH"
+
 # Make zsh case insensitive
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
 autoload -Uz compinit && compinit
