@@ -63,3 +63,4 @@ For now it will be pretty focused on unix based machines.
 - [eza](https://eza.rocks/): Replacement for `ls` command
 - [atuin](https://atuin.sh/): Save and backup shell history to an sql databse to make search easier? Has a built in AI agent to ask why commands failed, that seems useful!
 - [btop](https://github.com/aristocratos/btop): TUI to view and monitor machine resource usage (just processor, memory, disks, network, etc. No gpu)
+- [grill-with-docs](https://www.aihero.dev/skills-grill-with-docs): Agent skill like superpowers but better apparently?
