@@ -3,12 +3,13 @@ Personal documentation on setting up my preferred dev environment
 
 For now it will be pretty focused on unix based machines.
 
-## Start From Scratch:
+## Quick Start:
 
 1. [Pick a Terminal Emulator](terminal_emulators)
-2. [Install Homebrew](homebrew)
-3. [Install nano](nano)
-3. [Set up starship prompt](starship)
+2. [Install Homebrew](system/homebrew)
+3. [Install nano](system/packages/nano)
+3. [Set up starship prompt](system/packages/starship)
+4. [Copy `.zshrc`](shells/zsh)
 
 ## Shawn's Current Stack
 
@@ -18,20 +19,20 @@ For now it will be pretty focused on unix based machines.
 
 | Tool | Category |
 | :--- | :--: |
-| Terminal Emulator | [cmux](terminal_emulators/cmux/README.md) |
-| System Package Manager | [homebrew](homebrew/README.md) |
-| Javascript Package Manager | [bun](bun/README.md) |
-| Zsh Plugin Manager | [antidote](shells/zsh/antidote/README.md) |
-| Shell Text Editor | [nano](nano/README.md) |
-| Shell Prompt | [starship](starship/README.md) |
+| Terminal Emulator | [cmux](terminal_emulators/cmux) |
+| System Package Manager | [homebrew](system/homebrew/) |
+| Javascript Package Manager | [bun](javascript/bun/) |
+| Zsh Plugin Manager | [antidote](shells/zsh/antidote/) |
+| Shell Text Editor | [nano](system/packages/nano/) |
+| Shell Prompt | [starship](system/packages/starship/) |
 
 ### Python
 
 | Tool | Category |
 | :--- | :--: |
-| Package Manager | [uv](system/packages/astral/README.md) |
-| Linter & Formatter | [ruff]((system/packages/astral/README.md) ) |
-| Type Checker | [ty]((system/packages/astral/README.md) ) |
+| Package Manager | [uv](system/packages/astral/) |
+| Linter & Formatter | [ruff]((system/packages/astral/) ) |
+| Type Checker | [ty]((system/packages/astral/) ) |
 
 
 ## TO-DO:
