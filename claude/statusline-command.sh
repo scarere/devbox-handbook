@@ -10,6 +10,8 @@ MODEL=$(echo "$input" | jq -r '.model.display_name // empty')
 MODEL_ID=$(echo "$input" | jq -r '.model.id // empty')
 DIR=$(echo "$input" | jq -r '.workspace.current_dir // .cwd // empty')
 PCT=$(echo "$input" | jq -r '.context_window.used_percentage // 0' | cut -d. -f1)
+EFFORT=$(echo "$input" | jq -r '.effort.level // empty')
+COST=$(echo "$input" | jq -r '.cost.total_cost_usd // 0')
 
 # ── Gruvbox Dark Palette (true color) ──────────────────────────
 RESET='\033[0m'
@@ -23,6 +25,7 @@ FG_BLUE='\033[38;2;69;133;136m'     # #458588
 FG_GREEN='\033[38;2;152;151;26m'    # #98971a
 FG_RED='\033[38;2;204;36;29m'       # #cc241d
 FG_BG3='\033[38;2;102;92;84m'       # #665c54
+FG_ORANGE_DIM='\033[38;2;168;95;42m' # #a85f2a faded orange
 
 SEP="${FG_BG3}|${RESET}"
 
@@ -40,6 +43,9 @@ fi
 
 # Model with macOS icon
 printf "${FG_ORANGE}${BOLD}󰀵 ${model_display}${RESET}"
+
+# Effort level
+[ -n "$EFFORT" ] && printf " ${FG_ORANGE_DIM}󰓅 ${EFFORT}${RESET}"
 
 # Directory
 dir_name="~"
@@ -96,6 +102,10 @@ BAR=""
 [ "$EMPTY" -gt 0 ] && BAR="${BAR}$(printf "%${EMPTY}s" | tr ' ' '▱')"
 
 printf " ${SEP} ${BAR_COLOR}${BAR}${RESET} ${FG_BG3}${PCT}%%${RESET}"
+
+# Estimated session cost
+cost_str=$(printf "%.2f" "$COST")
+printf " ${SEP}${FG_GREEN} 󰄄 \$${cost_str}${RESET}"
 
 # Time (12hr AM/PM matching starship %-l:%M %p format)
 time_str=$(date +"%-l:%M %p")
