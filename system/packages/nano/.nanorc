@@ -1,16 +1,29 @@
-# nanorc files that come with `brew install nano`
+# Syntax Highlighting
+# ============================================================
+
+# Include syntax files from homebrew nano
 include "/opt/homebrew/share/nano/*.nanorc"
 
-# Custom nanorc file for kitty cong
-include "~/.config/kitty/kitty.nanorc"
+# Include extended syntax files (github.com/galenguyer/nano-syntax-highlighting)
+include "~/.nano/*.nanorc"
 
-# Nanorc settings
-# https://www.nano-editor.org/dist/latest/nanorc.5.html
-# =====================================================
+# Custom nanorc file for kitty config
+#include "~/.config/kitty/kitty.nanorc"
 
-# Always show current line number at the bottom. Avoid set line number so that we can still use mouse drag to copy text without copying line numbers
-set constantshow
+# Settings
+# ============================================================
 
-# Configure tab character
-set tabsize 4
-set tabstospaces
+# Display
+set constantshow  # Show current line/column at the bottom
+set indicator     # Scroll position indicator on the right
+
+# Tabs
+set tabsize 4     # 4-space tabs
+set tabstospaces  # Use spaces instead of tab characters
+
+# Editing
+set autoindent    # Match indentation of previous line
+set zap           # Allow replacing/deleting selected text
+
+# Mouse
+set mouse         # Enable mouse click to place cursor
