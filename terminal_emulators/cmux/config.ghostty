@@ -1,3 +1,4 @@
+# Put this file in ~/.config/ghostty/config instead of config.ghostty
 # Theme
 theme = Gruvbox Dark Hard
 
@@ -7,3 +8,6 @@ font-size = 14
 
 # Enable click to move
 cursor-click-to-move = true
+
+# Enable copy on highlighted text
+copy-on-select = clipboard
