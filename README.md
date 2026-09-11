@@ -60,7 +60,6 @@ For now it will be pretty focused on unix based machines.
 - rust: I want to learn this probably
 - [rich](https://rich.readthedocs.io/en/latest/introduction.html): Makes it easy to render "rich" text to terminal. Ie colors, markdown, loading bars, etc.
 - [mise](https://mise.jdx.dev/): Another package manager, but manages all your env vars, cli's, etc. Polyglot env and runtime manager for reproducible projects.
-- [eza](https://eza.rocks/): Replacement for `ls` command
 - [atuin](https://atuin.sh/): Save and backup shell history to an sql databse to make search easier? Has a built in AI agent to ask why commands failed, that seems useful!
 - [btop](https://github.com/aristocratos/btop): TUI to view and monitor machine resource usage (just processor, memory, disks, network, etc. No gpu)
 - [grill-with-docs](https://www.aihero.dev/skills-grill-with-docs): Agent skill like superpowers but better apparently?
