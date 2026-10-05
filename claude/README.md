@@ -2,6 +2,26 @@
 
 Custom claude code settings, skills, hooks and tips
 
+## Custom Skills
+
+Custom skills are stored in `claude/skills/` in this repo. Each skill is a subdirectory containing a `SKILL.md` file.
+
+To make these skills available globally in all Claude Code sessions, symlink them into `~/.claude/skills/`.
+
+**Symlink all skills:**
+
+```bash
+ln -sfn $(pwd)/claude/skills/* ~/.claude/skills/
+```
+
+**Symlink a single skill:**
+
+```bash
+ln -sfn $(pwd)/claude/skills/<skill-name> ~/.claude/skills/<skill-name>
+```
+
+When you add a new skill, either symlink it individually or re-run the "all skills" command to pick it up.
+
 ## Key BuiltIn Commands:
 
 Here are some notable built in commands to remember
