@@ -1,0 +1,49 @@
+{
+  // cmux specific settings. Copy to ~/.config/cmux/cmux.json
+  // File-managed settings override settings set using the UI and apply on save (no restart).
+  // This file uses JSON with comments (JSONC).
+  // ~/.config/cmux/settings.json is legacy and only read for keys missing from cmux.json.
+  "$schema": "https://raw.githubusercontent.com/manaflow-ai/cmux/main/web/data/cmux.schema.json",
+  "schemaVersion": 1,
+
+  // Custom shortcuts
+  "shortcuts": {
+    // Switch tabs (Surfaces)
+    "nextSurface": "ctrl+shift+→",
+    "prevSurface": "ctrl+shift+←",
+    // Close and open tabs (Surfaces)
+    "closeTab": "ctrl+shift+q",
+    "newSurface": "ctrl+shift+t",
+    // Switch workspaces (sidebar)
+    "nextSidebarTab": "ctrl+shift+↓",
+    "prevSidebarTab": "ctrl+shift+↑",
+
+    "bindings": {
+      // Reorder tabs (Surfaces)
+      "moveSurfaceLeft": "ctrl+shift+,",
+      "moveSurfaceRight": "ctrl+shift+.",
+      // Move surface to another pane (directional)
+      "moveSurfaceToPaneLeft": "ctrl+opt+←",
+      "moveSurfaceToPaneRight": "ctrl+opt+→",
+      "moveSurfaceToPaneUp": "ctrl+opt+↑",
+      "moveSurfaceToPaneDown": "ctrl+opt+↓",
+      // Move surface to another pane (cycle)
+      "moveSurfaceToPreviousPane": "ctrl+opt+,",
+      "moveSurfaceToNextPane": "ctrl+opt+.",
+      // Focus pane (directional)
+      "focusLeft": "cmd+opt+←",
+      "focusRight": "cmd+opt+→",
+      "focusUp": "cmd+opt+↑",
+      "focusDown": "cmd+opt+↓",
+      // Split pane
+      "splitRight": "cmd+opt+shift+→",
+      "splitDown": "cmd+opt+shift+↓",
+      // Rename
+      "renameTab": "ctrl+shift+r",
+      "renameWorkspace": "cmd+r",
+      // Reorder workspaces (sidebar)
+      "moveWorkspaceUp": "ctrl+shift+'",
+      "moveWorkspaceDown": "ctrl+shift+/"
+    }
+  }
+}
