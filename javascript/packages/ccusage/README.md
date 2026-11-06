@@ -7,3 +7,11 @@ Install with
 ```zsh
 bun install -g ccusage
 ```
+
+## Usage
+
+```zsh
+ccusage            # usage and cost per day (same as `ccusage daily`)
+ccusage monthly    # per month (also: weekly, session)
+ccusage --help     # all commands
+```

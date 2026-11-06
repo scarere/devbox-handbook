@@ -5,3 +5,5 @@ The astral ecosystem of packages can be installed both as python packages, vscod
 - [uv](https://docs.astral.sh/uv/): Python package manager
 - [ruff](https://docs.astral.sh/ruff/): Python linter and code formatter
 - [ty](https://docs.astral.sh/ty/): Python type checker and language server
+
+Install them with homebrew: `brew install uv ruff ty`

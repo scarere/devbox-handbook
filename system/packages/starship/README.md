@@ -1,8 +1,8 @@
 # Starship Prompt
 
-Starship prompt is a tool for having configurable terminal prompts. I consider this essential now in order to have information presented to me in a clean way.
+Starship prompt is a tool for having configurable terminal prompts, so the info you need is presented in a clean way.
 
-This directory contains a couple custom prompts. I will try to keep them updated until I have a set of ultimate prompts that present the info most relevant to me. Most of them are just small edits to the defaults.
+This directory contains a couple custom prompts. Most of them are just small edits to the defaults. Copy them to `~/.config/starship/` (`.zshrc` uses `gruvbox-rainbow-custom.toml`).
 
 ## Installation Tips
 
@@ -10,7 +10,7 @@ Follow the installation instructions in their [documentation](https://starship.r
 
 ### Install script
 
-, most likely you'll be using curl to download their install script and run it. By default starship will be installed to /usr/local/bin. If you need to modify parts of the install the script does accept flags. You can either write the install script to disk or use the `-s --` flags to add flags if piping it from the curl command.
+If you don't use homebrew, most likely you'll be using curl to download their install script and run it. By default starship will be installed to /usr/local/bin. If you need to modify parts of the install the script does accept flags. You can either write the install script to disk or use the `-s --` flags to add flags if piping it from the curl command.
 
 ```bash
 # Add flags to piped command

@@ -7,3 +7,13 @@ Install with
 ```zsh
 bun install -g skills
 ```
+
+## Usage
+
+```zsh
+skills find <query>          # search for skills
+skills add <owner/repo> -g   # install skills from a GitHub repo, globally
+skills ls -g                 # list installed global skills
+skills update -g             # update them
+skills --help                # all commands
+```

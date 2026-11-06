@@ -12,7 +12,7 @@ Add the following to `~/.nanorc`. Double check that it is the correct path for y
 include "{Homebrew Prefix}/share/nano/*.nanorc"
 ```
 
-See the .nanorc file in this directory for more configuration settings
+Or copy the [.nanorc](.nanorc) in this directory to `~/.nanorc`. It has this include plus more configuration settings
 
 ## Extended Syntax Highlighting
 
