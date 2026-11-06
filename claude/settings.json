@@ -1,8 +1,9 @@
 {
+  "cleanupPeriodDays": 3650,
   "permissions": {
     "defaultMode": "auto"
   },
-  "model": "claude-opus-4-6[1m]",
+  "model": "opus[1m]",
   "worktree": {
     "baseRef": "fresh"
   },
@@ -11,8 +12,10 @@
     "command": "~/.claude/statusline-command.sh",
     "padding": 0
   },
-  "enabledPlugins": {
-    "superpowers@claude-plugins-official": true
+  "modelSettings": {
+    "claude-opus-5-5": {
+      "effortLevel": "high"
+    }
   },
   "askUserQuestionTimeout": "never",
   "autoUpdatesChannel": "stable",
@@ -20,6 +23,5 @@
   "editorMode": "normal",
   "verbose": false,
   "preferredNotifChannel": "auto",
-  "switchModelsOnFlag": false,
-  "cleanupPeriodDays": 3650
+  "switchModelsOnFlag": false
 }
