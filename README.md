@@ -1,38 +1,66 @@
 # devbox-handbook
-Personal documentation on setting up my preferred dev environment
+Instructions for setting up a dev environment, plus personal config presets to copy.
 
-For now it will be pretty focused on unix based machines.
+Focused on macOS (and unix based machines in general).
 
 ## Quick Start:
 
-1. [Pick a Terminal Emulator](terminal_emulators)
-2. [Install Homebrew](system/homebrew)
-3. [Install nano](system/packages/nano)
-3. [Set up starship prompt](system/packages/starship)
-4. [Copy `.zshrc`](shells/zsh)
+### New Mac
 
-## Shawn's Current Stack
+1. Install [Claude Code](https://claude.com/claude-code), then start it and log in:
 
-*Last Updated: Sept 4th 2026*
+   ```bash
+   curl -fsSL https://claude.ai/install.sh | bash
+   ~/.local/bin/claude
+   ```
+
+2. Tell it: *"Follow https://github.com/scarere/devbox-handbook/blob/main/SETUP.md"*
+
+It shows the plan, asks about the optional tools, then sets everything up in order.
+
+### Manual order
+
+1. [Install Homebrew](system/homebrew)
+2. [Set up Git & GitHub](system/packages/git)
+3. [Install a Nerd Font](system/packages/fonts)
+4. [Install cmux](terminal_emulators/cmux)
+5. [Copy `.zshrc`](shells/zsh) and [set up starship](system/packages/starship)
+
+For everything else, follow the full list in [SETUP.md](SETUP.md#steps).
+
+## Current Stack
+
+*Last Updated: Nov 6th 2026*
 
 ### System
 
-| Tool | Category |
+| Category | Tool |
 | :--- | :--: |
 | Terminal Emulator | [cmux](terminal_emulators/cmux) |
 | System Package Manager | [homebrew](system/homebrew/) |
 | Javascript Package Manager | [bun](javascript/bun/) |
+| Version Control | [git + GitHub CLI](system/packages/git/) |
 | Zsh Plugin Manager | [antidote](shells/zsh/antidote/) |
 | Shell Text Editor | [nano](system/packages/nano/) |
 | Shell Prompt | [starship](system/packages/starship/) |
+| `ls` Replacement | [eza](system/packages/eza/) |
+| Font | [IosevkaTerm Nerd Font](system/packages/fonts/) |
+
+### Apps
+
+| Category | Tool |
+| :--- | :--: |
+| Code Editor | [VS Code](apps/vscode/) |
+| Coding Agent | [Claude Code](claude/) |
+| Dictation | [VoiceInk](apps/voiceink/) |
 
 ### Python
 
-| Tool | Category |
+| Category | Tool |
 | :--- | :--: |
 | Package Manager | [uv](system/packages/astral/) |
-| Linter & Formatter | [ruff]((system/packages/astral/) ) |
-| Type Checker | [ty]((system/packages/astral/) ) |
+| Linter & Formatter | [ruff](system/packages/astral/) |
+| Type Checker | [ty](system/packages/astral/) |
 
 
 ## TO-DO:
@@ -45,7 +73,7 @@ For now it will be pretty focused on unix based machines.
 
 ### Tools to check out
 - [pixi](https://pixi.prefix.dev/latest/): another package manager
-- [pydantic](https://pydantic.dev/)
+- [pydantic](https://pydantic.dev/) *(started exploring and using it, just not documented yet)*
     - Has a bunch of stuff:
     - [pydantic-validation](https://pydantic.dev/docs/validation/latest/get-started/): Better data version of dataclasses
     - [pydantic-logfire](https://pydantic.dev/docs/logfire/get-started/): Telemetry, ie matric logging, logs, etc.
@@ -63,3 +91,4 @@ For now it will be pretty focused on unix based machines.
 - [atuin](https://atuin.sh/): Save and backup shell history to an sql databse to make search easier? Has a built in AI agent to ask why commands failed, that seems useful!
 - [btop](https://github.com/aristocratos/btop): TUI to view and monitor machine resource usage (just processor, memory, disks, network, etc. No gpu)
 - [grill-with-docs](https://www.aihero.dev/skills-grill-with-docs): Agent skill like superpowers but better apparently?
+- [git-town](https://www.git-town.com/introduction.html): CLI for git workflows (eg. stacked PR's, syncing with main, etc.)
