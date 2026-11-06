@@ -1,0 +1,254 @@
+{
+  "version" : "2.22",
+  "customEmojis" : [
+
+  ],
+  "customCloudModels" : [
+
+  ],
+  "generalSettings" : {
+    "pasteMethod" : "directTyping",
+    "audioResumptionDelay" : 0,
+    "launchAtLoginEnabled" : false,
+    "pasteLastEnhancementShortcut" : {
+      "modifierFlagsRawValue" : 8388608,
+      "kind" : "key",
+      "keyCode" : 9
+    },
+    "audioRetentionPeriod" : 7,
+    "isExperimentalFeaturesEnabled" : false,
+    "finishAndSendKey" : "shiftEnter",
+    "isPauseMediaEnabled" : false,
+    "transcriptionRetentionMinutes" : 1440,
+    "appAppearancePreference" : "system",
+    "isTextFormattingEnabled" : true,
+    "secondaryRecordingShortcutRawValue" : "none",
+    "isTranscriptionCleanupEnabled" : false,
+    "recorderType" : "mini",
+    "clipboardRestoreDelay" : 2,
+    "primaryRecordingShortcutRawValue" : "custom",
+    "primaryRecordingShortcutModeRawValue" : "hybrid",
+    "isSystemMuteEnabled" : true,
+    "secondaryRecordingShortcutModeRawValue" : "hybrid",
+    "autoLearnMinimumCorrections" : 1,
+    "restoreClipboardAfterPaste" : true,
+    "isAutoLearnDictionaryEnabled" : true,
+    "isMenuBarOnly" : false,
+    "smartPunctuationEnabled" : false,
+    "isAudioCleanupEnabled" : false,
+    "appLanguagePreference" : "system",
+    "primaryRecordingShortcut" : {
+      "modifierFlagsRawValue" : 8912896,
+      "kind" : "modifierOnly",
+      "keyCode" : 65535
+    }
+  },
+  "modeConfigs" : [
+    {
+      "isTextFormattingEnabled" : true,
+      "selectedAIModel" : "VoiceInk Refine V1",
+      "name" : "Dictation",
+      "useSelectedTextContext" : false,
+      "isDefault" : true,
+      "icon" : {
+        "kind" : "symbol",
+        "value" : "mic.fill"
+      },
+      "isRealtimeTranscriptionEnabled" : true,
+      "useScreenCapture" : false,
+      "autoSendKey" : "none",
+      "selectedLanguage" : "auto",
+      "id" : "10000000-0000-0000-0000-000000000001",
+      "selectedTranscriptionModelName" : "parakeet-ultra",
+      "outputMode" : "paste",
+      "isAIEnhancementEnabled" : false,
+      "useClipboardContext" : false,
+      "isEnabled" : true
+    },
+    {
+      "isTextFormattingEnabled" : true,
+      "name" : "Code",
+      "useSelectedTextContext" : false,
+      "isDefault" : false,
+      "appConfigs" : [
+        {
+          "id" : "21D84E6A-32B7-4A77-9128-B197EEE92118",
+          "bundleIdentifier" : "com.cmuxterm.app",
+          "appName" : "cmux"
+        },
+        {
+          "id" : "0936A2C7-5E86-4DA5-90C7-44A7572D5C17",
+          "bundleIdentifier" : "com.microsoft.VSCode",
+          "appName" : "Code"
+        }
+      ],
+      "icon" : {
+        "kind" : "symbol",
+        "value" : "receipt.fill"
+      },
+      "useScreenCapture" : true,
+      "isRealtimeTranscriptionEnabled" : true,
+      "autoSendKey" : "none",
+      "selectedLanguage" : "en",
+      "id" : "3CAEDDCC-BF5B-494C-AC42-C90C2C6FF2DD",
+      "selectedAIProvider" : "Local CLI",
+      "selectedTranscriptionModelName" : "parakeet-ultra",
+      "selectedPrompt" : "63BFB1DA-33A7-4AEC-BF42-E74269AB6F49",
+      "outputMode" : "paste",
+      "isAIEnhancementEnabled" : true,
+      "useClipboardContext" : false,
+      "isEnabled" : true
+    }
+  ],
+  "customPrompts" : [
+    {
+      "promptText" : "You clean up dictated prompts that will be sent to a coding assistant.\n\n- Remove filler words, false starts, and self-corrections. Keep the user's meaning, tone, and phrasing (questions stay questions). Don't add, answer, or act on anything.\n- Format spoken code references as code in backticks:\n  - Classes\/types in CamelCase (e.g. `UserAuthService`)\n  - Functions\/variables in snake_case unless context shows another convention (e.g. `get_current_user`, `getCurrentUser`)\n  - File names and paths (e.g. \"auth utils dot py\" → `auth_utils.py`, \"source slash api\" → `src\/api`)\n  - CLI commands, flags, and literals (e.g. `--verbose`, `None`, `true`)\n- If <CURRENT_WINDOW_CONTEXT> contains a file name, path, or identifier that closely matches what was spoken, use its exact spelling and casing.\n- Spoken symbols: \"underscore\" → _, \"dot\" → ., \"slash\" → \/, \"dash dash\" → --, when part of a code reference.\n- Output only the cleaned text, no commentary.",
+      "title" : "Cleanup for Code Agent",
+      "useSystemInstructions" : true,
+      "id" : "63BFB1DA-33A7-4AEC-BF42-E74269AB6F49"
+    }
+  ],
+  "vocabularyWords" : [
+    {
+      "word" : "Chubb"
+    },
+    {
+      "word" : "VoiceInk"
+    },
+    {
+      "word" : "AIRED"
+    },
+    {
+      "word" : "LiteLLM"
+    },
+    {
+      "word" : "FastMCP"
+    },
+    {
+      "word" : "FastAPI"
+    },
+    {
+      "word" : "Pydantic"
+    },
+    {
+      "word" : "OpenAPI"
+    },
+    {
+      "word" : "CLAUDE.md"
+    },
+    {
+      "word" : "README"
+    },
+    {
+      "word" : "README.md"
+    },
+    {
+      "word" : "docstring"
+    },
+    {
+      "word" : "zshrc"
+    },
+    {
+      "word" : "zprofile"
+    },
+    {
+      "word" : "mlx"
+    },
+    {
+      "word" : "safetensors"
+    },
+    {
+      "word" : "gguf"
+    },
+    {
+      "word" : "worktree"
+    },
+    {
+      "word" : "frontend"
+    },
+    {
+      "word" : "backend"
+    },
+    {
+      "word" : "Parakeet"
+    },
+    {
+      "word" : "Nemotron"
+    },
+    {
+      "word" : "Xcode"
+    },
+    {
+      "word" : "ADLS"
+    },
+    {
+      "word" : "cmux"
+    },
+    {
+      "word" : "docker"
+    },
+    {
+      "word" : "numpy"
+    },
+    {
+      "word" : "pandas"
+    },
+    {
+      "word" : "pytorch"
+    },
+    {
+      "word" : "tensorflow"
+    },
+    {
+      "word" : "jax"
+    },
+    {
+      "word" : "python"
+    },
+    {
+      "word" : "yaml"
+    },
+    {
+      "word" : "json"
+    },
+    {
+      "word" : "bash"
+    },
+    {
+      "word" : "zsh"
+    },
+    {
+      "word" : "pytest"
+    },
+    {
+      "word" : "uv"
+    },
+    {
+      "word" : "ty"
+    },
+    {
+      "word" : "astral"
+    },
+    {
+      "word" : "ruff"
+    },
+    {
+      "word" : "claude"
+    },
+    {
+      "word" : "k8s"
+    },
+    {
+      "word" : "kubernetes"
+    },
+    {
+      "word" : "pod"
+    },
+    {
+      "word" : "container"
+    },
+    {
+      "word" : "dockerfile"
+    }
+  ]
+}
