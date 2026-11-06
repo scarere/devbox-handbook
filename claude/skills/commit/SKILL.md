@@ -44,6 +44,7 @@ Interactive commit workflow. Propose commits, get feedback, iterate, then commit
 - `Add new configuration options for terminal emulator settings including copy-on-select` (too long)
 
 **Body (only if needed):**
+- Separated from the title by one blank line, both in the commit and when shown to the user. Git takes everything up to the first blank line as the title, so without it `git log --oneline` and GitHub's commit lists show the bullets run into the title as one long line.
 - Bullet points, one per line
 - Each bullet is concise and fits on a single line without wrapping
 - Only add body when the title alone doesn't give enough context
@@ -67,6 +68,7 @@ Example:
 > **2.**
 > ```
 > Overhaul zshrc with sections, eza alias, and startup fixes
+>
 > - Reorganized into labeled sections
 > - Added eza aliases for common ls replacements
 > ```
