@@ -1,3 +1,5 @@
+#export ZSHRC_COLD_START=$EPOCHREALTIME
+
 # Path
 # ============================================================
 
@@ -15,6 +17,9 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Add Docker CLI completions
 fpath=($HOME/.docker/completions $fpath)
+
+# Prefer zsh's built-in _git over Homebrew git's bash-based one (which ignores matcher-list)
+fpath=(/usr/share/zsh/$ZSH_VERSION/functions $fpath)
 
 # Initialize completion system (once per day)
 autoload -Uz compinit
@@ -52,13 +57,17 @@ else
     alias ll="ls -G -l"
 fi
 
-# Cisco web filtering toggle
-alias cisco-off='(sudo launchctl bootout system/com.cisco.secureclient.vpn.service.agent 2>/dev/null || sudo launchctl bootout system/com.cisco.secureclient.vpnagentd 2>/dev/null) && sudo dscacheutil -flushcache && sudo killall -HUP mDNSResponder && echo "Cisco filtering disabled"'
-alias cisco-on='sudo launchctl bootstrap system "/opt/cisco/secureclient/bin/Cisco Secure Client - AnyConnect VPN Service.app/Contents/Resources/com.cisco.secureclient.vpnagentd.plist" && echo "Cisco filtering enabled"'
-
 # Plugins (antidote)
 # ============================================================
 
-# Disabled — no plugins in .zsh_plugins.txt, was costing ~180ms
+# Disabled — no plugins in .zsh_plugins.txt, and an empty `antidote load` still adds ~90ms
 # source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 # antidote load
+
+# Local
+# ============================================================
+
+# Machine-specific config that isn't in the repo (e.g. work-only aliases)
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+#echo "zshrc load time: $(( EPOCHREALTIME - ZSHRC_COLD_START ))s"
