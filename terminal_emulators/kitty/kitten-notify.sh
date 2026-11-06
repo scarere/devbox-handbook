@@ -9,7 +9,7 @@
 #         "hooks": [
 #           {
 #             "type": "command",
-#             "command": "bash /Users/scarere/.claude/hooks/kitten-notify.sh",
+#             "command": "bash ~/.claude/hooks/kitten-notify.sh",
 #             "async": true
 #           }
 #         ]

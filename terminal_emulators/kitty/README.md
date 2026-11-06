@@ -5,8 +5,6 @@ Kitty is a terminal alternative for OSX and Linux.
 It has several features that are missing in Terminal.app and additionally it uses GPU-rendering which is supposed to make the terminal "smoother". It also can be entirely configured using a conf file which makes it easy to transfer
 preferences between machines.
 
-Currently I'm exploring switching to kitty from the Terminal.app and Gnome Terminal, this page will contain my notes on that process.
-
 ## Create or copy kitty.conf
 
 You can either create `~/.config/kitty/kitty.conf` or copy one over. You can edit the file as usual, see the kitty documentation for details. 
@@ -15,7 +13,7 @@ After making edits to `kitty.conf` use `ctrl+shift+f5` (`ctrl+cmd+,` on osx) to 
 
 ## Add syntax highlighting for kitty.conf
 
-I have created a custom `nanorc` file to add syntax highlighting to kitty with `nano`. Copy the nanorc file (I prefer to copy it into the kitty config directory: `~/.config/kitty/kitty.nanorc`). Then add the following to `~/.nanorc`
+`kitty.nanorc` in this directory adds syntax highlighting for kitty with `nano`. Copy the nanorc file (into the kitty config directory: `~/.config/kitty/kitty.nanorc`). Then add the following to `~/.nanorc`
 
 ```bash
 include "~/.config/kitty/kitty.nanorc"
