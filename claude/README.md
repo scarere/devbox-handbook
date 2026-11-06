@@ -2,6 +2,23 @@
 
 Custom claude code settings, skills, hooks and tips
 
+## Settings
+
+Copy my settings and the status line script into `~/.claude/`:
+
+```bash
+cp claude/settings.json claude/statusline-command.sh ~/.claude/
+```
+
+## MCP Servers
+
+```bash
+claude mcp add --transport http <name> <url>    # remote server
+claude mcp add <name> -- <command> [args...]    # local server
+```
+
+Add `-s user` to make it available in every project. Use `/mcp` in a session to manage them.
+
 ## Custom Skills
 
 Custom skills are stored in `claude/skills/` in this repo. Each skill is a subdirectory containing a `SKILL.md` file.
@@ -35,7 +52,6 @@ Here are some notable built in commands to remember
     - Useful for seeing how much of context is used up by tools, skills, the system prompt etc.
 - `/diff`
     - Git diff to analyze changes in current branch
-    - Must have `gh` CLI installed I think
 - `/insights`
     - Generates a detailed insight report using all your session history
     - Recommends how to better use claude code based on insights
